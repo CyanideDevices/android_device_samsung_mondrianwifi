@@ -97,8 +97,8 @@ BOARD_USES_MMCUTILS := true
 TARGET_RECOVERY_FSTAB := device/samsung/mondrianwifi/rootdir/etc/fstab.qcom
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += device/samsung/mondrianwifi/sepolicy
+include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += device/samsung/mondrianwifi/sepolicy
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
@@ -114,8 +114,3 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_BAND := 802_11_ABG
 WIFI_DRIVER_FW_PATH_STA   := "sta"
 WIFI_DRIVER_FW_PATH_AP    := "ap"
-
-# Toolchain Flags
-TARGET_VRTOXIN_ROM := 4.9
-TARGET_NDK_VRTOXIN_ROM := 4.9
-TARGET_VRTOXIN_ARM := 4.8

@@ -3,7 +3,7 @@
     "remote": "device",
     "repository": "android_device_samsung_msm8974-common",
     "target_path": "device/samsung/msm8974-common",
-    "revision": "mm6.0"
+    "revision": "M"
   },
   {
     "remote": "device",
